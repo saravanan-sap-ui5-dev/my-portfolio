@@ -71,7 +71,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "com.myportfolio.view",
+        "viewPath": "com.myportfolio.screens",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -88,6 +88,7 @@
       "targets": {
         "AppUnified": {
           "viewType": "XML",
+          "viewId": "AppUnified",
           "viewName": "AppUnified"
         },
         "Dashboard": {
@@ -102,7 +103,7 @@
       }
     },
     "rootView": {
-      "viewName": "com.myportfolio.view.App",
+      "viewName": "com.myportfolio.screens.App",
       "type": "XML",
       "async": true,
       "id": "App"
