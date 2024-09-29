@@ -1,0 +1,225 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns:uxap="sap.uxap"
+    xmlns="sap.m"
+    xmlns:forms="sap.ui.layout.form"
+    xmlns:core="sap.ui.core" controllerName="com.myportfolio.screens.Dashboard" height="100%">
+
+    <uxap:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" upperCaseAnchorBar="true" alwaysShowContentHeader="true">
+        <uxap:headerTitle>
+            <uxap:ObjectPageDynamicHeaderTitle>
+                <uxap:expandedHeading>
+                    <Title text="SARAVANAN S" wrapping="true" />
+                </uxap:expandedHeading>
+
+                <uxap:snappedHeading>
+                    <HBox>
+                        <VBox>
+                            <Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiSmallMarginEnd" />
+                        </VBox>
+
+                        <VBox>
+                            <Title text="SARAVANAN S" wrapping="true"/>
+                            <Label text="TECHNICAL CONSULTANT"/>
+                        </VBox>
+                    </HBox>
+                </uxap:snappedHeading>
+
+                <uxap:expandedContent>
+                    <Label text="TECHNICAL CONSULTANT"/>
+                </uxap:expandedContent>
+
+                <uxap:snappedTitleOnMobile>
+                    <Title text="SARAVANAN S"/>
+                </uxap:snappedTitleOnMobile>
+
+                <uxap:actions>
+                    <OverflowToolbarButton icon="sap-icon://action" type="Transparent" text="Share" tooltip="action"/>
+                </uxap:actions>
+            </uxap:ObjectPageDynamicHeaderTitle>
+        </uxap:headerTitle>
+
+        <uxap:headerContent>
+            <FlexBox wrap="Wrap" fitContainer="true">
+                <Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiMediumMarginEnd sapUiSmallMarginBottom" displaySize="L"/>
+
+                <VBox class="sapUiLargeMarginEnd sapUiSmallMarginBottom">
+                    <Title text="Contact Information" class="sapUiTinyMarginBottom" />
+
+                    <HBox class="sapUiTinyMarginBottom">
+                        <core:Icon src="sap-icon://account"/>
+                        <Link text=" Saravanan S" class="sapUiSmallMarginBegin"/>
+                    </HBox>
+
+                    <HBox class="sapUiTinyMarginBottom">
+                        <core:Icon src="sap-icon://outgoing-call"/>
+                        <Link text=" +91 9655877981" class="sapUiSmallMarginBegin"/>
+                    </HBox>
+
+                    <HBox>
+                        <core:Icon src="sap-icon://email"/>
+                        <Link text="saravanan_amutha@hotmail.com" class="sapUiSmallMarginBegin"/>
+                    </HBox>
+                </VBox>
+
+                <VBox class="sapUiLargeMarginEnd sapUiSmallMarginBottom">
+                    <Title text="Others" class="sapUiTinyMarginBottom" />
+                    <HBox class="sapUiTinyMarginBottom">
+                        <Label text="Place:" class="sapUiSmallMarginEnd"/>
+                        <Text text="Bengaluru, Karnataka."/>
+                    </HBox>
+
+                    <HBox class="sapUiTinyMarginBottom" renderType="Bare">
+                        <Label text="LinkedIn:" class="sapUiSmallMarginEnd"/>
+                        <Link text="https://www.linkedin.com/in/saravanan-s-b842a5148/" press="handleTitleSelectorPress"/>
+                    </HBox>
+
+                </VBox>
+            </FlexBox>
+        </uxap:headerContent>
+
+        <uxap:sections>
+            <uxap:ObjectPageSection title="Professional Summary">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection>
+                        <uxap:blocks>
+                            <Text class="sapUiSmallMargin" text="Experienced SAPUI5 Developer with over 5 years of hands-on experience in designing and
+                                        developing user interfaces for web applications using SAP UI5 and Fiori. Proficient in SAP Fiori
+                                        Elements, SAP BTP Cloud Application Programming (CAP), and SAP HANA SQL, with a deep
+                                        understanding of front-end and back-end integration."></Text>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection title="Skills" importance="Medium">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection >
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Title text="Languages / Technologies"></Title>
+                                <Text text="SAP UI5, BTP (CAP), SAP HANA SQL script, HTML, CSS, Spring Boot, JavaScript (ES6), JSON, XML, OData."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Title text="Development Tools"></Title>
+                                <Text text="VS Code, Postman, SAP Business Application Studio."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Title text="Version Control"></Title>
+                                <Text text="Git Hub and Bitbucket"></Text>
+                            </VBox>
+                        </uxap:blocks>
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Title text="Cloud Platforms"></Title>
+                                <Text text="SAP BTP, Cloud Foundry."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Title text="Operating Systems"></Title>
+                                <Text text="Windows, Mac and Linux."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection title="Experience">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection >
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Title text="INFLEXION INFOTECH PRIVATE LIMITED, BANGALORE."></Title>
+                                <Label text="Senior Technical Consultant | August 2019 - Present"></Label>
+                                <Text text="• Designed and implemented intuitive user interfaces for web applications using SAPUI5 and SAP Fiori, ensuring responsiveness across devices."></Text>
+                                <Text text="• Developed OData services to integrate UI5 applications with back-end SAP systems (S/4HANA, BYD, Business One, SAP HANA) for seamless data interaction."></Text>
+                                <Text text="• Collaborated with business users and functional consultants to gather requirements, design custom controls, and enhance user experience using Fiori Elements."></Text>
+                                <Text text="• Deployed applications on SAP BTP using Cloud Foundry and managed continuous delivery with Git and Bitbucket."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection title="Education">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection>
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Title text="GANADIPATHY TULSI’S JAIN ENGINEERING COLLEGE - AFFILIATED ANNA UNIVERSITY, VELLORE, TAMIL NADU."></Title>
+                                <Label text="Master of Computer Applications (MCA) | June 2016 - April 2019"></Label>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection title="Certification &amp; Record of Achievements">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection>
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Text text="• SAP BTP Extensions with SAP Cloud Application Programming Model - Certification"></Text>
+                                <Text text="• Creating Applications and Extensions using SAP Build Code – Record of Achievement"></Text>
+                                <Text text="• Learn the Basics of SAP Fiori – Record of Achievement"></Text>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection title="Projects">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="LIGHTHOUSE">
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Label text="Technology: "></Label>
+                                <Text text="SAP UI5, Hana SQL Script, CAP, Business One"></Text>
+                                <Label text="Overview: "></Label>
+                                <Text text="A web-based shipping management application to track shipments, voyages, containers, and vessels."></Text>
+                                <Text class="sapUiSmallMarginBegin" text="• Created dynamic and responsive SAPUI5 interfaces that improved user interaction with real-time shipping data."></Text>
+                                <Text class="sapUiSmallMarginBegin" text="• Integrated OData services for back-end connectivity and deployed the application on SAP BTP."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                    <uxap:ObjectPageSubSection title="PROPERTYZONE">
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Label text="Technology: "></Label>
+                                <Text text="SAP UI5, SAP Hana SQL Script, SAP BTP CAP, SAP S/4HANA"></Text>
+                                <Label text="Overview: "></Label>
+                                <Text text="A property management solution for handling leases, sales, and maintenance services."></Text>
+                                <Text class="sapUiSmallMarginBegin" text="• Developed custom SAPUI5 components for data visualization and integrated REST APIs for real-time property data updates."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                    <uxap:ObjectPageSubSection title="PAYROLL">
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Label text="Technology: "></Label>
+                                <Text text="SAP UI5, SAP Hana SQL Script, SAP BTP CAP, SAP Business One"></Text>
+                                <Label text="Overview: "></Label>
+                                <Text text="A payroll automation system managing salary calculations, tax deductions, and pay slip generation."></Text>
+                                <Text class="sapUiSmallMarginBegin" text="• Designed SAPUI5-based UI and integrated third-party libraries to streamline payroll operations."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                    <uxap:ObjectPageSubSection title="SHOPPING CART">
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <Label text="Technology: "></Label>
+                                <Text text="SAP UI5, Cordova, SAP Business by Design"></Text>
+                                <Label text="Overview: "></Label>
+                                <Text text="A jewelry e-commerce application for browsing products, managing carts, and generating invoices."></Text>
+                                <Text class="sapUiSmallMarginBegin" text="• Built responsive UI and optimized performance for both web and mobile platforms."></Text>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
+</mvc:View>

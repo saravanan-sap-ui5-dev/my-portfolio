@@ -1,0 +1,35 @@
+<mvc:View controllerName="com.myportfolio.screens.AppUnified"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout" displayBlock="true">
+    <Page id="pageAppUnified" showHeader="false" enableScrolling="false">
+        <content>
+            <!-- <f:ShellBar  showCopilot="true" showSearch="false" showNotifications="true" showProductSwitcher="true" notificationsNumber="2">
+                <f:menu>
+                    <Menu>
+                        <MenuItem text="About" icon="sap-icon://hint" />
+                        <MenuItem text="Experience" icon="sap-icon://end-user-experience-monitoring" />
+                        <MenuItem text="Work" icon="sap-icon://technical-object" />
+                        <MenuItem text="Contact" icon="sap-icon://contacts" />
+                        <MenuItem text="Resume" icon="sap-icon://document" />
+                    </Menu>
+                </f:menu>
+                <f:profile>
+                    <Avatar initials="SS"/>
+                </f:profile>
+                <f:searchManager>
+                    <f:SearchManager id="searchField" search="handlerSearchFieldSearch" liveChange="handlerSearchFieldLiveEvent" suggest="handlerSearchSuggestEvent" enableSuggestions="true" suggestionItems="{
+					path: '/ProductCollection',
+					sorter: { path: 'Name' }
+				}">
+                        <f:suggestionItems>
+                            <SuggestionItem text="{Name}" description="{path:'Price'} {path:'CurrencyCode'}" key="{ProductId}"/>
+                        </f:suggestionItems>
+                    </f:SearchManager>
+                </f:searchManager>
+            </f:ShellBar> -->
+        </content>
+    </Page>
+</mvc:View>

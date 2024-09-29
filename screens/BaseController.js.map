@@ -1,0 +1,1 @@
+{"version":3,"file":"BaseController.js","names":["sap","ui","define","Controller","extend","onInit"],"sources":["BaseController-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OACH,CACI,8BAEJ,SAAUC,GACN,aAEA,OAAOA,EAAWC,OAAO,yCAA0C,CAC/DC,OAAQ,WAER,GAER","ignoreList":[]}

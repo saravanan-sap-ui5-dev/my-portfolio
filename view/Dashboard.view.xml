@@ -1,0 +1,47 @@
+<mvc:View controllerName="com.myportfolio.controller.Dashboard"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    xmlns:core="sap.ui.core"
+    xmlns:w="sap.ui.integration.widgets" displayBlock="true" height="100%">
+    <Page showHeader="false">
+        <content>
+            <Panel expandable="false" headerText="PROFESSIONAL SUMMARY" width="auto" class="sapUiResponsiveMargin">
+                <content>
+                    <Text text="In my role as a Senior SAP Technical Consultant, I design and implement innovative solutions using SAP UI5, BTP, and CAP (Spring Boot) to streamline business processes and enhance user experiences. With experience in developing web and mobile (Android) applications using SAP UI5, Cordova, and React Native, I create intuitive solutions that drive improved user engagement and operational efficiency across key projects." />
+                </content>
+            </Panel>
+            <Panel expandable="false" headerText="SKILLS" width="auto" class="sapUiResponsiveMargin">
+                <content>
+                    <f:GridContainer id="demoGrid" class="sapUiSmallMargin" columnsChange=".onGridColumnsChange">
+                        <f:layout>
+                            <f:GridContainerSettings rowSize="84px" columnSize="84px" gap="8px" />
+                        </f:layout>
+                        <f:layoutXS>
+                            <f:GridContainerSettings rowSize="70px" columnSize="70px" gap="8px" />
+                        </f:layoutXS>
+                        <!-- <f:Card class="sapUiMediumMargin" width="300px">
+                            <f:header>
+                                <card:Header title="Languages / Technologies" subtitle="" iconSrc="sap-icon://bus-public-transport" />
+                            </f:header>
+                            <f:content>
+                                <List items="{/skills/languages}">
+                                    <items>
+                                        <StandardListItem title="{text}" description="{ProductId}" icon="{ProductPicUrl}" iconDensityAware="false" iconInset="false" />
+                                    </items>
+                                </List>
+                            </f:content>
+                        </f:Card> -->
+                        <w:Card manifest="{/list2}" baseUrl="./">
+                            <w:layoutData>
+                                <f:GridContainerItemLayoutData columns="4" />
+                            </w:layoutData>
+                        </w:Card>
+                    </f:GridContainer>
+                </content>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
